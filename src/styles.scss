@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+input.ng-touched.ng-invalid {border:solid red 2px;}
+
+
+.login
+{
+  cursor: pointer;
+}
+.container{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__card
+  {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgrey;
+    width: 400px;
+    min-height: 350px;
+  }
+  &__items
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    &>div{
+      padding-bottom: 10px;
+    }
+    &>div>input
+    {
+      margin-left: 10px;
+    }
+    &>.btnSubmit{
+      margin-left: 15px;
+    }
+  }
+  &__EmailText
+  {
+    padding-right: 29px;
+  }
+
+  &__btnGroup
+  {
+    display: flex;
+    position: relative;
+    right: -10px;
+    &>.btnsign
+    {
+      width: 63px;
+    }
+  }
+}
+.spansign
+{
+  position: relative;
+  right: -10px;
+}
